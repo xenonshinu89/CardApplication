@@ -1,0 +1,133 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+<display-name>Archetype Created Web Application</display-name>
+  
+  <filter>
+  	<filter-name>URLFilterCheck</filter-name>
+  	<filter-class>com.cardDetailsApplication.Controller.URLFilterCheck</filter-class>
+  </filter>
+
+  
+  <filter-mapping>
+  	<filter-name>URLFilterCheck</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+ 
+  
+  <servlet>
+  	<servlet-name>Login Controller</servlet-name>
+  	<servlet-class>com.cardDetailsApplication.Controller.LoginController</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Register User Controller</servlet-name>
+  	<servlet-class>com.cardDetailsApplication.Controller.RegisterPageController</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Register User Page</servlet-name>
+  	<servlet-class>com.cardDetailsApplication.Controller.RegisterUserController</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>List Cards Controller</servlet-name>
+  	<servlet-class>com.cardDetailsApplication.Controller.ListCards</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Add Cards Controller</servlet-name>
+  	<servlet-class>com.cardDetailsApplication.Controller.AddCards</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>Add Cards Details Controller</servlet-name>
+  	<servlet-class>com.cardDetailsApplication.Controller.AddCardDetails</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UpdateCardDetails</servlet-name>
+  	<display-name>UpdateCardDetails</display-name>
+  	<description></description>
+  	<servlet-class>com.cardDetailsApplication.Controller.UpdateCardDetails</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LogoutController</servlet-name>
+  	<display-name>LogoutController</display-name>
+  	<description></description>
+  	<servlet-class>com.cardDetailsApplication.Controller.LogoutController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SearchCardDetails</servlet-name>
+  	<display-name>SearchCardDetails</display-name>
+  	<description></description>
+  	<servlet-class>com.cardDetailsApplication.Controller.SearchCardDetails</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DeleteCardDetails</servlet-name>
+  	<display-name>DeleteCardDetails</display-name>
+  	<description></description>
+  	<servlet-class>com.cardDetailsApplication.Controller.DeleteCardDetails</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  	<servlet-name>Login Controller</servlet-name>
+  	<url-pattern>/loginPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>Register User Controller</servlet-name>
+  	<url-pattern>/registerPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>Register User Page</servlet-name>
+  	<url-pattern>/registerNewUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>List Cards Controller</servlet-name>
+  	<url-pattern>/listCards</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>Add Cards Controller</servlet-name>
+  	<url-pattern>/addCards</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>Add Cards Details Controller</servlet-name>
+  	<url-pattern>/addCardDetails</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>UpdateCardDetails</servlet-name>
+   	<url-pattern>/updateCardDetails</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>LogoutController</servlet-name>
+   	<url-pattern>/logout</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>SearchCardDetails</servlet-name>
+   	<url-pattern>/searchCardDetails</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+   	<servlet-name>DeleteCardDetails</servlet-name>
+   	<url-pattern>/deleteCardDetails</url-pattern>
+   </servlet-mapping>
+   
+ 
+ <session-config>
+  	<session-timeout>10</session-timeout>
+  </session-config>
+ 
+  <welcome-file-list> 
+  	<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+
+</web-app>

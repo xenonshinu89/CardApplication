@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+   <class name="com.cardDetailsApplication.Model.User" table="User">
+      <id name="id" type="integer" column="id">
+         <generator class="increment"/>
+      </id>
+      <property name="username" column="username" type="string"/>
+      <property name="password" column="password" type="string"/>
+<!--       <property name="salary" column="salary" type="integer"/> -->
+   </class>
+</hibernate-mapping>
